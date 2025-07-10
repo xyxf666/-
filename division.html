@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分工台账 - 麦芒实践服务团</title>
+    <link rel="stylesheet" href="/麦芒/css/style.css">
+    <style>
+        .division-table td {
+            padding: 12px; border: 1px solid #ddd; vertical-align: top;
+        }
+        .division-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .division-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        /* 手机端适配 */
+        @media (max-width: 768px) {
+            .division-table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .division-table {
+                min-width: 650px;
+            }
+            
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">麦芒实践服务团</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="practice.html">实践内容</a></li>
+                <li><a href="data.html">调研数据</a></li>
+                <li><a href="division.html">分工台账</a></li>
+                <li><a href="team.html">团队成员</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="division" class="division">
+        <h2>社会实践分工台账</h2>
+        <div class="division-table-container" style="overflow-x: auto; margin: 20px 0;">
+            <table class="division-table" style="width: 100%; border-collapse: collapse; margin: 0 auto; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">任务模块</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">具体内容</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center;">交付成果</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; width: 100px; text-align: center;">负责人</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center; width: 120px;">协助人</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; text-align: center; width: 100px;">完成时限</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; width: 120px; text-align: center;">完成情况</th>
+                        <th style="padding: 12px; border: 1px solid #ddd; width: 150px; text-align: center;">备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">设计团队logo、横幅、团旗等拍照所需物品</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">1、设计符合团队实践主题的简洁logo<br>2、定稿后对接焦老师制作成品</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">透明底的logo设计图、团旗设计图以及实物</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">王丹玥</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">韩俊豪<br>谭晓蕾</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">7月10日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">想团队口号</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">设计贴合实践主题、朗朗上口的口号</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">确定的团队口号</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">杨智超</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">张馨天<br>韩涵</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">7月10日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">文献与政策研究</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">1、收集国家/地方关于科技小院、乡村振兴的政策文件<br>2、整理青岛市科技小院研究文献及建设情况</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">政策汇编、文献综述报告</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">姜玉琳</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">张栩宁<br>王元顺</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">7月15日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">调研工具设计</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">1、设计针对三种不同人群的调查问卷<br>2、设计线下访谈科技小院相关人员的提纲<br>3、设计观察记录模板</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">调查问卷、访谈提纲、观察记录表</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">孙天迈</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">姜玉琳<br>张栩宁</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">7月20日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>调研场地协调</td>
+                        <td>提前填写介绍信发给焦老师，让他对接相关实践地点</td>
+                        <td>介绍信、调研日程表、分工表</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">王丹玥</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">杨智超<br>韩  涵</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">7月20日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>数据收集与分析</td>
+                        <td>数据收集阶段：发放并回收调查问卷；根据访谈提纲等材料，收集相关数据信息<br>数据分析阶段：对回收的问卷和实践过程中获得的信息进行分类统计并分析</td>
+                        <td>产出比较直观的数据分析情况、关键问题清单</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">谭晓蕾</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">韩俊豪<br>孙天迈</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">8月10日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>报告撰写</td>
+                        <td>撰写调研报告（含技术转化漏斗模型）；整理典型案例；提出优化建议</td>
+                        <td>产出符合需要的调研报告</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">姜玉琳</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">张栩宁<br>王元顺</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">8月20日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>宣传与记录</td>
+                        <td>实践过程中及时记录（拍照+录视频）<br>撰写新闻稿/推文<br>制作实践视频/海报<br>管理团队社交媒体账号</td>
+                        <td>在各大新闻网、社交平台投稿宣传；<br>问卷数据、访谈录音、照片视频素材留存</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">张馨天</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">韩  涵<br>杨智超</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">8月25日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>后勤安全保障</td>
+                        <td>物资采购（医药包等）<br>购买保险/每日安全打卡<br>食宿协调<br>准备好应急预案，遇突发情况执行</td>
+                        <td>物资清单<br>实践过程中提醒、保障自身及成员安全</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">王元顺</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">孙天迈<br>张栩宁</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">7月25日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>成果汇总</td>
+                        <td>制作答辩PPT<br>准备成果展示材料<br>提交终版报告</td>
+                        <td>打包汇总实践全部成果</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">韩俊豪</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">谭晓蕾<br>王丹玥</td>
+                        <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top; text-align: center;">8月30日</td>
+                        <td><select style="width: 100%; padding: 5px;"><option value="未完成">未完成</option><option value="已完成">已完成</option></select></td>
+                        <td><textarea style="width: 100%; height: 60px; resize: none;"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notes">
+            <h3>注意事项</h3>
+            <ul>
+                <li>每日例会：19:00线上/线下简短会议，汇报进展与问题。</li>
+                <li>文档共享：使用腾讯文档实时更新任务进度</li>
+                <li>紧急联络：王丹玥（电话：13465462366）为第一联系人，指导老师焦健为第二联系人</li>
+                <li>灵活调整：若某环节滞后，需及时反馈并协调支援。</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 青岛农业大学团委"麦芒"实践服务团</p>
+    </footer>
+</body>
+</html>

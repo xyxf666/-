@@ -1,0 +1,349 @@
+/* 基础样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 颜色变量定义 */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --light-color: #F5F7FA;
+    --dark-color: #333333;
+    --text-color: #555555;
+    --white-color: #FFFFFF;
+}
+
+/* 全局样式 */
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+
+h1, h2, h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+/* 导航栏样式 */
+header {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* 英雄区域样式 */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(76, 175, 80, 0.1), rgba(255, 152, 0, 0.1)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* 通用部分样式 */
+section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* 实践内容样式 */
+.practice-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.practice-item:last-child {
+    border-bottom: none;
+}
+
+.practice-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.practice-item ul, .practice-item ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.practice-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* 数据可视化区域 */
+.chart-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+/* 团队成员样式 */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.team-member {
+    flex: 1 1 300px;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.team-member h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.team-member ul {
+    margin-left: 1.5rem;
+}
+
+.team-member li {
+    margin-bottom: 0.5rem;
+}
+
+/* 联系我们样式 */
+.contact p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .team-members {
+        flex-direction: column;
+    }
+}
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+/* 通用部分样式 */
+section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* 数据可视化区域 */
+.chart-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+/* 分工台账样式 */
+.division h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.division-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.division-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.division-table th,
+.division-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.division-table th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.division-table tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+.division-table tr:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.notes {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.notes h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.notes ul {
+    margin-left: 1.5rem;
+}
+
+.notes li {
+    margin-bottom: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 1rem;
+    }
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .division-table th,
+    .division-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
